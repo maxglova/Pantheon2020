@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./style.scss"
 
-import videoBtn from "../../images/Icon/General/video.png"
+import videoBtn from "../../images/video.png"
 
 const LeftImgRowValueProps = (props) => (
     <div className="container grid-bg">

@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./style.scss"
 
-import videoBtn from "../../images/Icon/General/video.png"
-
 const RightImgRow = (props) => (
   <div className="container grid-bg">
     <div className="row content-spacer">
