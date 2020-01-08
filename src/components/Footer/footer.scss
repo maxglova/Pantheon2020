@@ -1,0 +1,32 @@
+@import "../global.scss";
+
+.FooterWrapper{ 
+    background: $blueprint-blue;
+    width: 100vw;
+    border-bottom: $border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .FooterContentContainer{
+    display: flex;
+    height: 100%;
+    padding: 0 20px;
+  }
+  .FooterContentContainer:nth-child(1){
+    border-right: 1px solid #fff;
+  }
+  .FooterContentContainer:nth-child(2){
+    text-align: left;
+    color: #ffffff;
+    width: 69%;
+    margin-top: 35px;
+  }
+  .FooterContentContainer:nth-child(3){
+    border-left: 1px solid #fff;
+  }
+  .footerClass{
+    margin-top: 25px;
+    width: 250px;
+    vertical-align: middle;
+  }

@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:600|Barlow:400,700&display=swap');
+
+
+/* Global Variables */
+$barlow-stack: 'barlow', arial, sans-serif;
+$barlow-condensed-stack: 'barlow-condensed', arial, sans-serif;
+$white-border: 1px solid #ffffff;
+$blueprintBorder: 1px solid #0553EF;
+
+/* Colors */
+$blueprint-blue: #0553EF;
+$st-blue: #00a9f7;
+$orange: #FF8B02;
+$white: #ffffff;
+$border: 1px solid #ffffff;
+
+/* Global Styles */
+html {
+  font-family: 'barlow', Arial, Helvetica, sans-serif, serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'barlow', Arial, Helvetica, sans-serif, serif;
+}
+h1, h2, h3, h4, h5 ,h6, p {
+  font-family: 'barlow', Arial, Helvetica, sans-serif, serif;
+  margin: 0px; 
+  padding: 0px;
+}
+
+.flexbox{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Mobile Styles */
+
+
+@media (max-width: 992px) {
+
+  .headerContentContainer{
+    display: none;
+  }
+
+  .mobileNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .headerLogo{
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+  }
+}
+
+/* Header */
+.HeaderWrapper{ 
+  background: $blueprint-blue;
+  width: 100vw;
+  position: fixed;
+  border-bottom: $border;
+  z-index: 1000;
+}
+
+.FooterWrapper{ 
+  background: $blueprint-blue;
+  width: 100vw;
+  border-bottom: $border;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.FooterContentContainer{
+  display: flex;
+  height: 100%;
+  padding: 0 20px;
+}
+.FooterContentContainer:nth-child(1){
+  border-right: 1px solid #fff;
+}
+.FooterContentContainer:nth-child(2){
+  text-align: left;
+  color: #ffffff;
+  width: 69%;
+  margin-top: 35px;
+}
+.FooterContentContainer:nth-child(3){
+  border-left: 1px solid #fff;
+}
+.footerClass{
+  margin-top: 25px;
+  width: 250px;
+  vertical-align: middle;
+}
+
+.headerContentContainer{
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  flex: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerLogo{
+  max-width: 200px;
+  padding: 25px;
+}
+
+.headingText{
+  font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.secondaryHead{
+  font-weight: bold;
+}
+
+.navBrand{
+  flex: 0 0 20%;
+}
+
+.navList{
+  list-style: none;
+  margin: 0px; 
+  flex: 0 0 80%;
+  align-items: flex-end;
+  height: 100%;
+}
+.navList li {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  border: $white-border;
+  border-top: 0px; 
+  border-bottom: 0px;
+  border-right: 0px;
+  height: 100%;
+}
+
+.navList li:nth-child(5) {
+   width: auto;
+   border-right: 1px solid #ffffff;
+   padding: 0 10px 0 20px;
+}
+
+.navLinks a{
+  color: $white;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  top: 27px;
+}
+
+.reg-btn{
+  padding: 10px 20px;
+  background-color: $orange;
+  color: $white;
+  font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.head-reg-arrow{
+  display: inline-block; 
+  position: relative;
+  right: 15px;
+  top: 25px;
+  animation: point 2.5s infinite;
+}
+
+@keyframes point {
+  0% { left: -5%; } 70% { left: 0px; } 100% { left: -5%; }
+}
+
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+&.show {
+    max-height: 99em;
+    transition: max-height .5s ease-in-out;
+  }
+}
+
+/* Hero Container */
+
+.heroContainer{
+  width: 100%;
+  min-height: 800px;
+  background-image: url('../images/blue-grid-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pantheonHeroGraphic{
+  width: 90%; 
+  height: auto; 
+  margin: 0 auto;
+}
+
+.heroGraphicContainer{
+  width: 100%;
+  min-height: 200px;
+}
+
+.heroGraphic{
+  width: 90%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Details Container */
+.details-top-spacer{
+  margin-top: 70px;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  margin-top: 50px;
+}
+.detailsContainer{
+  width: 30%;
+}
+.detailsContainer:nth-child(2){
+  border: $border; 
+  border-top: 0px;
+  border-bottom: 0px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.detailsContainer .headingText{
+  padding: 20px;
+}
+.detailsContainer h2{
+  text-align: left;
+  font-size: 36px;
+}
+.Countdown{
+   margin: 0 auto;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  padding: 0 20px;
+  vertical-align: middle;
+  font-family: 'barlow', Arial, Helvetica, sans-serif;
+}
+.Countdown-col-element strong{
+  font-size: 2em;
+  font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+}
+.countdown-label{
+  display: block;
+  font-size: 1.3em;
+}
+.detailsContainer p{
+  font-size: 24px;
+  line-height: 41px;
+}
+.detailsContainer p:nth-child(2){
+  border: $border;
+  border-left: 0px;
+  border-right: 0px;
+}
+.VideoBtn-container{
+  margin-top: 20px;
+}
+.reg-btn-spacer{
+  height: 5px;
+}
+.details-reg-btn-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.details-reg-btn{
+  margin: 0 auto;
+  width: auto;
+}
+img.details-reg-arrow{
+  display: inline; 
+  position: relative;
+  animation: point 2.5s infinite;
+}
+.details-container-spacer{
+  height: 75px;
+}
+
+/* Grid BG Container */
+.grid-bg{
+  background-image: url('https://cdn2.hubspot.net/hubfs/1584056/grid-lines-bg.png');
+  background-size: cover; 
+  background-position: top center;
+}
+.ruler-bg{
+  background-image: url('../images/top-ruler.png');
+  background-size: contain; 
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/*  Content Styles  */
+.content-spacer{
+  padding-top: 120px;
+}
+.category-label{
+  background-color: $st-blue;
+  text-align: center;
+  padding: 5px 0px;
+  color: $white;
+  width: 165px;
+}
+.col-6-img{
+  width: 100%;
+}
+.content-container{
+  padding: 20px;
+  border: $blueprintBorder;
+}
+.VideoBtnLabel{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.valueProp-container{
+  width: 100%;
+  border: $blueprintBorder;
+}
+
+.flexbox .flex-item{
+  padding: 10px 20px;
+  vertical-align: middle;
+  border: $blueprintBorder;
+  border-top: 0px; 
+  border-bottom: 0px;
+  height: 100%;
+}
+
+.flex-item h3{
+  font-weight: bold;
+}
+
+.btn-container{
+  margin: 0 auto;
+  position: relative;
+}
+
+.outlined-btn{
+  border: $blueprintBorder;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: $barlow-condensed-stack;
+  display: inline-block;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+a.outlined-btn:hover{
+  background-color: $blueprint-blue;
+  transition: .6s ease-in-out;
+  animation: 1s ease-in-out;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.outline-btn p{
+  vertical-align: middle;
+}
+
+/* Mobile Menu Styling */
+.mobileNav{
+  display: none;
+}
+
+.menu-content {
+  padding: 0 0 0 50px;
+  max-height: 0;
+  overflow: hidden;
+}
+.collapsible-menu {
+  background-color: $blueprint-blue;
+  color: $white;
+  display: flex;
+  justify-content: middle;
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.collapsible-menu a {
+  display:block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url('../images/menu-icon.svg') no-repeat center;
+  padding-top: 60px;
+  padding-right: 20px;
+}
+input#menu {
+  display: none;
+}
+
+input:checked+label {
+  background: url('../images/clear-icon.svg') no-repeat center;
+}
+
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+
