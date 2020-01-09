@@ -11,7 +11,7 @@ import SplashHeader from "../components/Splash-Header/splashHeader.js"
 import "../components/global.scss"
 
 const SplashPage = () => (
-    <div className="container">
+    <div className="container-fluid">
       <SEO title="Pantheon 2020 | ServiceTitan User Conference" />
       <SplashHeader />
       

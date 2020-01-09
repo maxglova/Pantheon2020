@@ -43,8 +43,8 @@ const LeftImgRowValueProps = (props) => (
             </div>
           </div>
         </div>
-        <div className="col-sm-6  left-content-spacer">
-          <img className="col-6-img" src={props.leftImgSrc} alt={props.leftImgAltTxt}/> 
+        <div className="col-sm-6 left-content-spacer mobile-left-img">
+          <img className="col-6-img" src={props.leftImgSrcMobile} alt={props.leftImgAltTxt}/> 
         </div>
       </div>
     </div>

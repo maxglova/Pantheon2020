@@ -2,6 +2,8 @@
 
 .HeaderWrapperSplash{
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   background: $blueprint-blue;
   color: $white;
   height: 80px;
@@ -33,7 +35,11 @@
   justify-content: start;
 }
 
-.dateLocationContainer{
+.splashHeadLogoContainer {
+  display: flex;
+}
+
+.splashDateLocationContainer{
   display: inline-block;
   color: $white;
   padding: 15px 20px;
@@ -58,21 +64,29 @@
 }
 
 .head-reg-arrow-splash{
+  display: inline-block;
   position: relative;
-  top: -3px;
-  right: 40px;
+  top: -2px;
+  left: 157px;
+  animation: point 2.5s infinite;
 }
 
 .registerBtn{
   height: 100%;
   vertical-align: middle;
+  padding: 0 30px;
 }
 
 .reg-btn-splash{
   display: inline-block;
   margin-top: 16px;
-  margin-right: 20px;
-  width: auto;
+  padding: 10px 20px;
+    background-color: $orange;
+    color: $white;
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 160px;
 }
 
 .mainContentContainer{
@@ -85,7 +99,7 @@
 
 .bold-upper-head{
   margin: 0 auto;
-  padding-top: 26%;
+  padding-top: 19%;
   color: $white;
   text-align: center;
   z-index: 20;
@@ -105,4 +119,52 @@
   position: absolute;
   width: inherit;
   top: 0;
+}
+.splashDetailsContainer {
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.splashDetailsContainer p{
+  font-size: 14px;
+}
+
+.head-logo{
+  border-right: $border;
+}
+
+@media (max-width: 992px) {
+    .splashDateLocationHead{
+      font-size: 12px;
+    }
+    .head-logo{
+      max-width:160px;
+      border-right: none;
+    }
+    .headerLogo{
+      margin-top: 12px !important;
+    }
+    .splashHeadLogoContainer{
+       flex-direction: column;
+    }
+    .splashDetailsContainer {
+      margin-top: 6px !important;
+      line-height: 16px !important;
+      margin-left: 19px !important;
+    }
+    .splashVideoBtn {
+      width: 90%;
+      left: 5%;
+      margin-top: 130px;
+    }
+    .bold-upper-head {
+      font-size: 2em;
+      padding-top: 24%;
+    }
+    .registerBtn{
+      padding: 0 10px;
+    }
+    .reg-btn-splash{
+      width: 130px;
+      margin-top: 19px;
+    }
 }

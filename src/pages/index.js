@@ -9,7 +9,8 @@ import heroImage from "../images/pantheonHeroGraphic.png"
 import SEO from "../components/seo"
 import Countdown from "../components/HomeHero/countdown"
 import regArrow from "../images/btn-arrow-right.png"
-import ellenRoar from "../images/ellenRoar.svg"
+import ellenRoar from "../images/ellenRoar.png"
+import ellenRoarMobile from "../images/ellenRoarMobile.png"
 import sessionAttendee from "../images/sessionAttendeeImg.png"
 import videoBtn from "../images/video.png"
 import HomeHero from "../components/HomeHero/HomeHero.js"
@@ -26,6 +27,7 @@ const IndexPage = () => (
       <HomeHero />
       <LeftImgRowValueProps 
         leftImgSrc={ellenRoar} 
+        leftImgSrcMobile={ellenRoarMobile}
         leftImgAltTxt="Ellen Roar Speaking at Pantheon 2019"
         categoryLabel="Speakers"
         sectionHeadingLine1="Become the Architect"
