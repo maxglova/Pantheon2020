@@ -118,19 +118,21 @@
 
   /* Mobile Menu Styling */
 .mobileNav{
-  display: none;
+  height: 0;
 }
 
 .menu-content {
   text-align: center;
-  height: 100vh;
+  height: 0;
   max-height: 0;
   overflow: hidden;
   position: absolute;
     left: 0;
-    top: 80px;
+    top: 69px;
     background: $blueprint-blue;
     width: 100%;
+  -webkit-transition: all .4s ease; /* Safari prior 6.1 */
+  transition: all .4s ease;
 }
 .collapsible-menu {
   background-color: $blueprint-blue;
@@ -151,7 +153,7 @@
 .collapsible-menu label {
   display: block;
   cursor: pointer;
-  background: url('../../images/menu-icon.svg') no-repeat center;
+  background: url('../../images/Icons/mobile-menu.svg') no-repeat center;
   padding-top: 60px;
   padding-right: 20px;
 }
@@ -170,10 +172,19 @@ input:checked ~ .menu-content {
 
 @media (max-width: 992px) {
 
+  .mobileNav{
+    height: 100%;
+  }
+  .menu-content {
+    height: 2000px;
+  }
+
   .headerContentContainer{
     display: none;
   }
-
+  .navBrand{
+    max-width: 160px;
+  }
   .mobileNav{
     display: flex;
     flex-direction: row;
@@ -189,5 +200,20 @@ input:checked ~ .menu-content {
     max-width: 200px;
     margin-right: 0px;
     margin: 0 auto;
+  }
+  .navDetails{
+    border-right: 0px;
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+  .navDetails p{
+    font-size: 12px;
+  }
+  .collapsible-menu{
+    padding: 0 20px;
+    border-left: $border;
+  }
+  img.footer-icons {
+    width: 20px;
   }
 }

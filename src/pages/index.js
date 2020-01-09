@@ -15,6 +15,7 @@ import videoBtn from "../images/video.png"
 import HomeHero from "../components/HomeHero/HomeHero.js"
 import LeftImgRowValueProps from "../components/L-Img-Row-ValueProps/content-row.js"
 import RightImgRow from "../components/R-Img-Row/content-row.js"
+import Carousel from "../components/Carousel/carousel.js"
 
 const currentDate = new Date();
 const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
@@ -30,7 +31,7 @@ const IndexPage = () => (
         sectionHeadingLine1="Become the Architect"
         sectionHeadingLine2="of Your Business."
         sectionBodyCopy="Pantheon is where leaders in the trades come together to break ground in an industry that has long been underserved by technology. Discover the unprecedented power of ServiceTitan training sessions, network with industry peers from across the country, and learn how to be the architect of your own business from industry giants."
-        videoBtnLabel="Watch 2019 Recap"
+        VideoBtnLabel="Watch 2019 Recap"
         valueHead1="126+"
         valueSubHead1="Sessions"
         valueHead2="38"
@@ -56,6 +57,7 @@ const IndexPage = () => (
         rightImgSrc={sessionAttendee}
         rightImgAltTxt="Pantheon 2019 Attendee during a training session"
         />
+        <Carousel />
       
 
 

@@ -33,7 +33,7 @@ const RightImgRow = (props) => (
           </div>
         </div>
       </div>
-      <div className="col-sm-6">
+      <div className="col-sm-6 r-img-mobile-spacer">
         <img className="col-6-img" src={props.rightImgSrc} alt={props.rightImgAltTxt}/> 
       </div>
     </div>

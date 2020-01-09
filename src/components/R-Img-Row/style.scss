@@ -42,7 +42,6 @@
   
   .valueProp-container{
     width: 100%;
-    border: $blueprintBorder;
   }
 
   .subHead{
@@ -92,20 +91,7 @@
     margin: 0 auto;
     position: relative;
   }
-  
-  .outlined-btn{
-    border: $blueprintBorder;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-family: $barlow-condensed-stack;
-    display: inline-block;
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    width: max-content;
-  }
+
   
   a.outlined-btn:hover{
     background-color: $blueprint-blue;
@@ -117,4 +103,16 @@
   
   .outline-btn p{
     vertical-align: middle;
+  }
+
+
+  @media (max-width: 992px) {
+
+    .r-img-mobile-spacer{
+      margin-top: 40px;
+    }
+    .content-spacer {
+      padding-bottom: 60px;
+    }
+
   }

@@ -11,7 +11,7 @@
   .FooterContentContainer{
     display: flex;
     height: 100%;
-    padding: 0 20px;
+    padding: 0px;
   }
   .FooterContentContainer:nth-child(1){
     border-right: 1px solid #fff;
@@ -19,8 +19,8 @@
   .FooterContentContainer:nth-child(2){
     text-align: left;
     color: #ffffff;
-    width: 69%;
     padding:25px;
+    border-left: $border;
   }
   .FooterContentContainer:nth-child(3){
     border-left: 1px solid #fff;
@@ -29,4 +29,48 @@
     padding: 25px;
     width: 200px;
     vertical-align: middle;
+  }
+
+  .footer-copywrite{
+    color: $white;
+    margin-top: 25px;
+    padding: 0px 30px;
+  }
+
+  .footerNavBrand{
+    border-right: $border;
+  }
+  
+  .footer-social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  img.footer-icons{
+    width: 40px;
+  }
+
+
+  @media (max-width: 992px) {
+    .FooterWrapper{
+      flex-direction: column;
+    }
+
+    .FooterContentContainer {
+      padding: 0px;
+    }
+    .FooterContentContainer:nth-child(1){
+      border-right: none;
+    }
+    .FooterContentContainer:nth-child(2){
+      width: 100%;
+      border-top: $border;
+      border-left: none;
+    }
+    .FooterContentContainer:nth-child(2){
+      width: 100%;
+    }
+    .footer-social-links {
+      width: 100%;
+    }
   }

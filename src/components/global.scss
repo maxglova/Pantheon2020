@@ -93,3 +93,10 @@ ul{
       transition: max-height .5s ease-in-out;
     }
   }
+
+  @media (max-width: 992px) {
+      .row{
+        width: 90%;
+        margin: 0 auto;
+      }
+  }

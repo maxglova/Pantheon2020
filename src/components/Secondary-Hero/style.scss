@@ -1,0 +1,12 @@
+@import '../global.scss';
+
+.inner-hero-row{
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reg-hero-img{
+    background-image: url('../../images/regHeroImg.png');
+}
