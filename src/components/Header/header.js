@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from "../../images/pantheon-logo.svg"
 import regArrow from "../../images/btn-arrow-right.png"
@@ -13,7 +14,7 @@ console.log(logo);
 
 const Header = ({ siteTitle }) => (
   <div className="HeaderWrapper">
-    <div className="headerContentContainer">
+    <div className="navbar headerContentContainer">
       <div className="navBrand">
           <Link to="/">
             <img className="headerLogo" src={logo} alt="Pantheon Logo"/>

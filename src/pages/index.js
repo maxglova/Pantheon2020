@@ -10,6 +10,7 @@ import SEO from "../components/seo"
 import Countdown from "../components/HomeHero/countdown"
 import regArrow from "../images/btn-arrow-right.png"
 import ellenRoar from "../images/ellenRoar.svg"
+import sessionAttendee from "../images/sessionAttendeeImg.png"
 import videoBtn from "../images/video.png"
 import HomeHero from "../components/HomeHero/HomeHero.js"
 import LeftImgRowValueProps from "../components/L-Img-Row-ValueProps/content-row.js"
@@ -52,6 +53,8 @@ const IndexPage = () => (
         sessionList4="Using you Ipad as a Frisbee"
         sessionList5="Zig-Zaging through Traffic"
         sessionList6="Turning on your iPad 101"
+        rightImgSrc={sessionAttendee}
+        rightImgAltTxt="Pantheon 2019 Attendee during a training session"
         />
       
 

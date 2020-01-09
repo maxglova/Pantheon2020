@@ -36,9 +36,19 @@ p {
   letter-spacing: .38;
 }
 
+ul{
+  margin: 0px;
+}
+
 .flexbox{
   display: flex;
   flex-flow: row wrap;
+}
+.container, .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /* Button Styles */
@@ -59,6 +69,15 @@ p {
     right: 15px;
     top: 25px;
     animation: point 2.5s infinite;
+  }
+
+  /* Type Styles */
+
+  .bold-upper-head{
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
   }
   
   @keyframes point {

@@ -1,0 +1,108 @@
+@import '../global.scss';
+
+.HeaderWrapper{
+  display: flex;
+  background: $blueprint-blue;
+  color: $white;
+  height: 80px;
+}
+
+.HeaderWrapper > ul {
+  list-style-type: none;
+  display: flex;
+  flex: 3;
+}
+
+.headerLogo{
+  width: 100%;
+  margin-top: 25px;
+}
+
+.HeaderWrapper ul {
+  flex-direction: row;
+
+}
+
+.HeaderWrapper > ul > li:nth-child(2){
+  border-left: $border;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.headerContentContainer{
+  justify-content: start;
+}
+
+.dateLocationContainer{
+  display: inline-block;
+  color: $white;
+  padding: 15px 20px;
+  border-left: $border;
+}
+
+.navbrand {
+  flex: 0 0 30%;
+  margin-left: 20px;
+}
+
+.navBrand{
+  vertical-align: none;
+}
+
+.headerLogo{
+  padding: 0 20px;
+}
+
+.navbar-nav{
+  padding: 20px;
+}
+
+.head-reg-arrow{
+  position: relative;
+  top: -3px;
+  right: 40px;
+}
+
+.registerBtn{
+  height: 100%;
+  vertical-align: middle;
+}
+
+.reg-btn{
+  display: inline-block;
+  margin-top: 16px;
+  margin-right: 20px;
+  width: auto;
+}
+
+.mainContentContainer{
+  background-image: url('../../images/blue-grid-bg.png');
+  background-size: cover; 
+  background-position: top center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bold-upper-head{
+  margin: 0 auto;
+  padding-top: 26%;
+  color: $white;
+  text-align: center;
+  z-index: 20;
+  text-shadow: 2px 2px #292929;
+  position: relative;
+}
+
+.splashVideoBtn{
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  z-index: 1;
+}
+
+.vidBtnContainer{
+  position: absolute;
+  width: inherit;
+  top: 0;
+}

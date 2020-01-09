@@ -20,7 +20,6 @@
   
   .headerLogo{
     max-width: 200px;
-    padding: 25px;
   }
   
   .headingText{
@@ -70,3 +69,100 @@
     position: relative;
     top: 27px;
   }
+
+  .reg-btn{
+    padding: 10px 20px;
+    background-color: $orange;
+    color: $white;
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .head-reg-arrow{
+    display: inline-block; 
+    position: relative;
+    right: 15px;
+    top: 25px;
+    animation: point 2.5s infinite;
+  }
+  
+  @keyframes point {
+    0% { left: -5%; } 70% { left: 0px; } 100% { left: -5%; }
+  }
+  
+  .collapse {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+  &.show {
+      max-height: 99em;
+      transition: max-height .5s ease-in-out;
+    }
+  }
+
+  /* Mobile Menu Styling */
+.mobileNav{
+  display: none;
+}
+
+.menu-content {
+  padding: 0 0 0 50px;
+  max-height: 0;
+  overflow: hidden;
+}
+.collapsible-menu {
+  background-color: $blueprint-blue;
+  color: $white;
+  display: flex;
+  justify-content: middle;
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.collapsible-menu a {
+  display:block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url('../../images/menu-icon.svg') no-repeat center;
+  padding-top: 60px;
+  padding-right: 20px;
+}
+input#menu {
+  display: none;
+}
+
+input:checked+label {
+  background: url('../../images/clear-icon.svg') no-repeat center;
+}
+
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+
+@media (max-width: 992px) {
+
+  .headerContentContainer{
+    display: none;
+  }
+
+  .mobileNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .headerLogo{
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+  }
+}
