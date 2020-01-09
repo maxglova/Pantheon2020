@@ -15,8 +15,10 @@
   
   /*  Content Styles  */
   .content-spacer{
-    padding-top: 120px;
+    padding-top: 0px;
+    padding-bottom: 120px;
   }
+  
   .category-label{
     background-color: $st-blue;
     text-align: center;
@@ -48,6 +50,21 @@
     font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: $gray;
+  }
+
+  .sessionsList ul {
+    margin-left: 20px;
+    list-style: none;
+    letter-spacing: $heading-letter-space;
+  }
+
+  .sessionsList li::before {
+    content: "\2022"; 
+  color: #8F8F8F; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
   }
 
   .secondSessionList li:nth-child(3){

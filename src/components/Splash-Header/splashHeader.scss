@@ -1,13 +1,13 @@
 @import '../global.scss';
 
-.HeaderWrapper{
+.HeaderWrapperSplash{
   display: flex;
   background: $blueprint-blue;
   color: $white;
   height: 80px;
 }
 
-.HeaderWrapper > ul {
+.HeaderWrapperSplash > ul {
   list-style-type: none;
   display: flex;
   flex: 3;
@@ -18,12 +18,12 @@
   margin-top: 25px;
 }
 
-.HeaderWrapper ul {
+.HeaderWrapperSplash ul {
   flex-direction: row;
 
 }
 
-.HeaderWrapper > ul > li:nth-child(2){
+.HeaderWrapperSplash > ul > li:nth-child(2){
   border-left: $border;
   padding-top: 15px;
   padding-left: 20px;
@@ -57,7 +57,7 @@
   padding: 20px;
 }
 
-.head-reg-arrow{
+.head-reg-arrow-splash{
   position: relative;
   top: -3px;
   right: 40px;
@@ -68,7 +68,7 @@
   vertical-align: middle;
 }
 
-.reg-btn{
+.reg-btn-splash{
   display: inline-block;
   margin-top: 16px;
   margin-right: 20px;

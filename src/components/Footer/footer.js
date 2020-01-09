@@ -12,9 +12,9 @@ console.log(logo);
 const Footer = ({ siteTitle }) => (
   <div className="FooterWrapper">
     <div className="FooterContentContainer">
-      <div className="navBrand">
+      <div className="footerNavBrand">
           <Link to="/">
-          <img className="footerClass" src={logo} alt="Pantheon Logo" />
+          <img className="footerLogo" src={logo} alt="Pantheon Logo" />
           </Link>
       </div>
     </div>

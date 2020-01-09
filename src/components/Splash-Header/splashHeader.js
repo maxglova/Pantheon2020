@@ -15,7 +15,7 @@ console.log(logo);
 
 const Header = ({ siteTitle }) => (
   <div className="container-fluid">
-  <div className="HeaderWrapper">
+  <div className="HeaderWrapperSplash">
     <ul>
       <li className="head-logo">
         <Link to="/">
@@ -28,9 +28,9 @@ const Header = ({ siteTitle }) => (
       </li>
     </ul>
     <div className="registerBtn">
-        <Link className="reg-btn" to="/registration">Registration
+        <Link className="reg-btn-splash" to="/registration">Registration
         </Link>
-        <img className="head-reg-arrow" src={regArrow} alt="register arrow" />
+        <img className="head-reg-arrow-splash" src={regArrow} alt="register arrow" />
     </div>
   </div>
   <div className="mainContentContainer">
