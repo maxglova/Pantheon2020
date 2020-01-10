@@ -13,28 +13,31 @@ const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? cur
 
 
 const HomeHero = () => (
-    <div className="heroContainer">
-    <img src={heroImage} className="heroGraphic" />
-    <div className="detailsWrapper">
-        <div className="detailsContainer">
-        <h2 className="headingText">ServiceTitan<br/>User Conference</h2>
-        </div>
-        <div className="detailsContainer">
-        <Countdown date={`${year}-10-13T00:00:00`} />
-        </div>
-        <div className="detailsContainer">
-        <p>August 13 & 14</p>
-        <p>Pasadean, CA.</p>
-        <div className="reg-btn-spacer"></div>
-            <div className="details-reg-btn-container">
-            <a href="/registration" className="reg-btn details-reg-btn">Register Now</a>
-            <img className="details-reg-arrow" src={regArrow} alt="register arrow" />
+        <div className="container-fluid heroWrapper">
+            <div className="heroContainer">
+                <img src={heroImage} className="heroGraphic" />
+                <div className="details-container-spacer"></div>
             </div>
-        <div className="reg-btn-spacer"></div>
+            <div className="detailsWrapper">
+                    <div className="detailsContainer">
+                    <h2 className="headingText">ServiceTitan<br/>User Conference</h2>
+                    </div>
+                    <div className="detailsContainer">
+                    <Countdown date={`${year}-10-13T00:00:00`} />
+                    </div>
+                    <div className="detailsContainer">
+                    <p>August 13 & 14</p>
+                    <p>Pasadean, CA.</p>
+                    <div className="reg-btn-spacer"></div>
+                        <div className="details-reg-btn-container">
+                        <a href="/registration" className="reg-btn details-reg-btn">Register Now</a>
+                        <img className="details-reg-arrow" src={regArrow} alt="register arrow" />
+                        </div>
+                    <div className="reg-btn-spacer"></div>
+                    </div>
+                </div>
+                <div className="details-container-bottom-spacer"></div>
         </div>
-    </div>
-    <div className="details-container-spacer"></div>
-    </div>
 )
 
 

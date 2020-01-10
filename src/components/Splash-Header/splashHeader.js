@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "../../images/pantheon-logo.svg"
 import regArrow from "../../images/btn-arrow-right.png"
 import videoBtn from "../../images/splashVideoBtn.png"
+import lastYearVideo from "../../images/2019-video.mp4"
 import "./splashHeader.scss"
 
 
@@ -15,6 +16,11 @@ console.log(logo);
 
 const Header = ({ siteTitle }) => (
   <div className="container-fluid">
+  <div class="fullscreen-bg">
+    <video autoplay loop muted className="fullscreen-bg-video">
+      <source src="http://localhost:8000/static/2019-video-ae75fef0182ca28e54b357150d39cbe5.mp4" type="video/mp4" />
+      </video>
+  </div>
   <div className="HeaderWrapperSplash">
     <div className="splashHeadLogoContainer">
       <div className="head-logo">
