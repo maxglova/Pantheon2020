@@ -17,8 +17,8 @@ console.log(logo);
 const Header = ({ siteTitle }) => (
   <div className="container-fluid">
   <div class="fullscreen-bg">
-    <video autoplay loop muted className="fullscreen-bg-video">
-      <source src="http://localhost:8000/static/2019-video-ae75fef0182ca28e54b357150d39cbe5.mp4" type="video/mp4" />
+    <video autoPlay muted loop className="fullscreen-bg-video">
+      <source src={lastYearVideo} type="video/mp4" />
       </video>
   </div>
   <div className="HeaderWrapperSplash">
