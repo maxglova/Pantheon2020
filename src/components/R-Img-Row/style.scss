@@ -1,20 +1,22 @@
 @import "../global.scss";
-
-/* Grid BG Container */
-.grid-bg{
-    background-image: url('https://cdn2.hubspot.net/hubfs/1584056/grid-lines-bg.png');
-    background-size: cover; 
-    background-position: top center;
-  }
-  .ruler-bg{
-    background-image: url('../../images/top-ruler.png');
-    background-size: contain; 
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
   
+
+/* BG's */
+
+.grid-bg{
+  background-image: url('../../images/grid-lines-bg.png');
+  background-size: cover; 
+  background-position: top center;
+}
+.ruler-bg{
+  background-image: url('../../images/top-ruler.png');
+  background-size: contain; 
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
   /*  Content Styles  */
-  .content-spacer{
+  .r-img-content-spacer{
     padding-top: 0px;
     padding-bottom: 120px;
   }
@@ -111,7 +113,7 @@
     .r-img-mobile-spacer{
       margin-top: 40px;
     }
-    .content-spacer {
+    .r-img-content-spacer {
       padding-bottom: 60px;
     }
 

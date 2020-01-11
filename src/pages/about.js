@@ -5,29 +5,25 @@ import { graphql, useStaticQuery} from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/layout"
 import Image from "../components/image"
-import heroImage from "../images/register-bg.png"
-import innerSubHead from "../images/SVGs/ReserveYourSpot.svg"
-import PricingCards from "../components/PricingCards/pricingCards.js"
+import heroImage from "../images/about-bg.png"
 import SEO from "../components/seo"
-import SecondaryHeroWSubHead from "../components/Secondary-Hero-wSubHead/secondary-hero-wSubHead.js"
-import RegisterCopyRow from "../components/RegisterCopyRow/RegisterCopyRow.js"
+import regArrow from "../images/btn-arrow-right.png"
+import SecondaryHero from "../components/Secondary-Hero/secondary-hero.js"
+import AboutCopyRow from "../components/AboutCopyRow/AboutCopyRow.js"
+import Carousel from "../components/Carousel/carousel.js"
 
 const currentDate = new Date();
 const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
 
-const Register = () => (
+const About = () => (
     <Layout>
       <SEO title="Pantheon 2020 | ServiceTitan User Conference" />
-        <SecondaryHeroWSubHead 
+        <SecondaryHero 
           bgImg={heroImage}
-          HeaderTxt="Early Bird Pricing Ends Soon!"
-          innerSubHead={innerSubHead}
+          HeaderTxt="About the Conference"
         />
-        <PricingCards
-        />
-        <RegisterCopyRow
-
-        />
+        <AboutCopyRow />
+        <Carousel />
 
 
     
@@ -36,7 +32,7 @@ const Register = () => (
 
 )
 
-export default Register
+export default About
 
 export const query = graphql`
   query {

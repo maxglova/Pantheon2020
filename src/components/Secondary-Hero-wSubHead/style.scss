@@ -1,25 +1,24 @@
 @import '../global.scss';
 
-.inner-hero-row{
+.inner-hero-row-wSubHead{
     width: 100%;
     height: 329px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.innerHeroContentsContainer{
+.innerHeroContentsContainer-wSubHead{
     width: 775px;
     padding-top: 137px;
     margin: 0 auto;
 }
 
-.innerHeroHeader{
+.innerHeroHeader-wSubHead{
     font-size: 3.5em;
     color: $white;
-    text-align: center;
 }
 
-.innerSubHead{
+.innerSubHead-wSubHead{
     text-align: center;
     position: relative;
     top: -38px;
@@ -28,33 +27,21 @@
 
 
 @media (max-width: 992px) {
-    .innerHeroContentsContainer {
+    .innerHeroContentsContainer-wSubHead {
         padding-top: 0px;
+        padding-left: 40px;
         width: auto;
         padding-top: 100px;
     }
-    .innerHeroHeader{
+    .innerHeroHeader-wSubHead{
         font-size: 1.5em;
     }
-    .innerSubHead {
+    .innerSubHead-wSubHead {
         width: 40%;
         top: -17px;
         left: -9px;
     }
-    .inner-hero-row{
+    .inner-hero-row-wSubHead{
         height: 200px;
-    }
-    .wrenchGraphic{
-        display: none;
-    }
-    .regMobileAdjustCards{
-        width: 100%;
-    }
-    .ticketList{
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-    .textLink-wArrow-Reg1{
-        margin-bottom: 25px;
     }
 }

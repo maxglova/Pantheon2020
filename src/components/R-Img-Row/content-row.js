@@ -5,7 +5,7 @@ import "./style.scss"
 
 const RightImgRow = (props) => (
   <div className="container grid-bg">
-    <div className="row content-spacer">
+    <div className="row r-img-content-spacer">
       <div className="col-sm-6 details-top-spacer">
         <div className="category-label headingText">{props.categoryLabel}</div>
         <div className="content-container">

@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => (
                 <Link to="/index">About</Link>
               </li>
               <li className="head-reg-btn-container">
-              <Link className="reg-btn" to="/registration">Registration
+              <Link className="reg-btn" to="/register">Registration
               </Link>
               <img className="head-reg-arrow" src={regArrow} alt="register arrow" />
             </li>
@@ -66,7 +66,7 @@ const Header = ({ siteTitle }) => (
             <li><a href="#"></a>Travel</li>
             <li><a href="#"></a>About</li>
             <li className="reg-btn-container mobile-reg">
-              <Link className="reg-btn mobile-reg" to="/registration">Registration
+              <Link className="reg-btn mobile-reg" to="/register">Registration
               </Link>
             </li>
         </ul>

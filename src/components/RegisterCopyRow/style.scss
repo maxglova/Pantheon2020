@@ -1,0 +1,57 @@
+@import '../global.scss';
+
+.cross-grid-bg{
+    background-image: url('../../images/cross-grid-bg.png');
+  }
+
+.bordered-content{
+    border: $blueprintBorder;
+    padding: 0px;
+}
+
+.bordered-content h5{
+    border-bottom: $blueprintBorder;
+    padding: 20px;
+}
+
+.textLink-wArrow-Reg1{
+    margin-top: 25px;
+}
+
+.webLogoImg{
+    padding: 20px;
+}
+
+.wbDetailsTxt{
+    border-left: $blueprintBorder;
+}
+
+.wbDetailsTxt p, .wbDetailsTxt a{
+    padding: 10px;
+}
+
+.boldedSocialText{
+    font-weight: bold;
+}
+
+.textLink-wArrow img {
+    display: inline-block;
+}
+
+.wb-img-container{
+    padding: 0px;
+    text-align: center;
+}
+
+.warnerBrosImg{
+    padding-top: 40px;
+}
+
+.wbRowAdjust{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col-8 .wbDetailsTxt{
+    margin-bottom: 120px;
+}

@@ -1,18 +1,18 @@
 @import "../global.scss";
 
-  /* Containers & BG's */
+/* BG's */
 
-  .grid-bg{
-    background-image: url('../../images/grid-lines-bg.png');
-    background-size: cover; 
-    background-position: top center;
-  }
-  .ruler-bg{
-    background-image: url('../../images/top-ruler.png');
-    background-size: contain; 
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
+.grid-bg{
+  background-image: url('../../images/grid-lines-bg.png');
+  background-size: cover; 
+  background-position: top center;
+}
+.ruler-bg{
+  background-image: url('../../images/top-ruler.png');
+  background-size: contain; 
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
   /*  Content Styles  */
   .left-content-spacer{

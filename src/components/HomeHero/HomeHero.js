@@ -5,6 +5,8 @@ import React from "react"
 import regArrow from "../../images/btn-arrow-right.png"
 import heroImage from "../../images/pantheonHeroGraphic.png"
 import Countdown from "./countdown"
+import HeaderSpacer from "../HeaderSpacer/headerSpacer.js"
+
 
 import "./HomeHero.scss"
 
@@ -14,6 +16,7 @@ const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? cur
 
 const HomeHero = () => (
         <div className="container-fluid heroWrapper">
+            <HeaderSpacer />
             <div className="heroContainer">
                 <img src={heroImage} className="heroGraphic" />
                 <div className="details-container-spacer"></div>
@@ -30,7 +33,7 @@ const HomeHero = () => (
                     <p>Pasadean, CA.</p>
                     <div className="reg-btn-spacer"></div>
                         <div className="details-reg-btn-container">
-                        <a href="/registration" className="reg-btn details-reg-btn">Register Now</a>
+                        <a href="/register" className="reg-btn details-reg-btn">Register Now</a>
                         <img className="details-reg-arrow" src={regArrow} alt="register arrow" />
                         </div>
                     <div className="reg-btn-spacer"></div>

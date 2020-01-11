@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="101px" viewBox="0 0 341 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.8081 0.7226 7.086 0.7226 7.086 6.9996 0.8081 6.9996"></polygon>
+    </defs>
+    <g id="Registration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Registration---Desktop---EarlyBird" transform="translate(-308.000000, -246.000000)">
+            <g id="Header-Graphic" transform="translate(0.000000, 85.500000)">
+                <g id="Header-copy" transform="translate(307.000000, 137.000000)">
+                    <g id="Group-15" transform="translate(0.500000, 22.500000)">
+                        <g id="Group">
+                            <text id="Reserve-Your-Spot-To" font-family="SummerLovingSolid-Regular, Summer Loving Solid" font-size="46" font-weight="normal" line-spacing="34" letter-spacing="0.958333333" fill="#FFFFFF">
+                                <tspan x="33.5" y="87.5">Reserve Your Spot Today!</tspan>
+                            </text>
+                            <g id="Group-8" transform="translate(14.000000, 43.500000) scale(1, -1) rotate(-270.000000) translate(-14.000000, -43.500000) translate(-29.000000, 30.000000)">
+                                <path d="M82.3739,23.8367 L22.5609,23.8367 L13.9139,15.1907" id="Stroke-1" stroke="#FFFFFF" stroke-dasharray="30,10,1,10"></path>
+                                <g id="Group-7" transform="translate(0.000000, 0.975700)">
+                                    <line x1="12.3827" y1="12.4069" x2="0.3537" y2="0.3779" id="Stroke-2" stroke="#FFFFFF" stroke-dasharray="2,4"></line>
+                                    <g id="Group-6" transform="translate(78.000000, 19.000000)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-5"></g>
+                                        <path d="M7.0861,3.8606 C7.0861,2.1276 5.6801,0.7226 3.9471,0.7226 C2.2141,0.7226 0.8081,2.1276 0.8081,3.8606 C0.8081,5.5946 2.2141,6.9996 3.9471,6.9996 C5.6801,6.9996 7.0861,5.5946 7.0861,3.8606 Z" id="Fill-4" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
