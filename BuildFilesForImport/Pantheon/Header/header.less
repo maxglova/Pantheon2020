@@ -1,0 +1,221 @@
+@import (less) url("../global.less");
+
+.HeaderWrapper{ 
+    background: @blueprint-blue;
+    width: 100vw;
+    position: fixed;
+    border-bottom: @border;
+    z-index: 1000;
+  }
+  
+  .headerContentContainer{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between!important;
+  }
+  
+  .headerLogo{
+    max-width: 200px;
+    width: 200px;
+    padding: 25px;
+  }
+  
+  .headingText{
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .secondaryHead{
+    font-weight: bold;
+  }
+  
+  .navBrand{
+    border-right: @white-border;
+  }
+
+  .logoDetailsContainer{
+    display: flex;
+  }
+  
+  .navDetails{
+    border-right: @white-border;
+    padding: 15px 30px;
+    color: @white;
+  }
+
+  .navList{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .navList li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    border: @white-border;
+    border-top: 0px; 
+    border-bottom: 0px;
+    border-right: 0px;
+    padding: 28px;
+  }
+
+
+  .navList li:nth-child(5) {
+     width: auto;
+     border-right: 1px solid #ffffff;
+     padding: 0 10px 0 20px;
+  }
+
+  .navLinks{
+    width: 547px;
+  }
+  
+  .navLinks a{
+    color: @white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .head-reg-btn-container{
+    width: 250px;
+  }
+
+  .reg-btn{
+    padding: 10px 20px;
+    background-color: @orange;
+    color: @white;
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .head-reg-arrow{
+    position: relative;
+    top: -26px;
+    margin-left: 105px;
+    animation: point 2.5s infinite;
+  }
+  
+  @keyframes point {
+    0% { left: -5%; } 70% { left: 0px; } 100% { left: -5%; }
+  }
+  
+  .collapse {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+  &.show {
+      max-height: 99em;
+      transition: max-height .5s ease-in-out;
+    }
+  }
+
+  /* Mobile Menu Styling */
+.mobileNav{
+  display: none;
+}
+
+.menu-content {
+  text-align: center;
+  height: 0;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+    left: 0;
+    top: 69px;
+    background: @blueprint-blue;
+    width: 100%;
+  -webkit-transition: all .4s ease; /* Safari prior 6.1 */
+  transition: all .4s ease;
+}
+.collapsible-menu {
+  background-color: @blueprint-blue;
+  color: @white;
+  width: 60px;
+  display: flex;
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.collapsible-menu a {
+  display:block;
+  margin: 40px 0px;
+  text-decoration: none;
+}
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url('../../../images/Pantheon/Icons/mobile-menu.svg') no-repeat center;
+  padding-top: 60px;
+  padding-right: 20px;
+}
+input#menu {
+  display: none;
+}
+
+input:checked+label {
+  background: url('../../../images/Pantheon/Icons/clear-icon.svg') no-repeat center;
+}
+
+input:checked ~ .menu-content {
+  max-height: 100vh;
+}
+
+
+@media (max-width: 992px) {
+
+  .mobileNav{
+    height: 100%;
+  }
+  .menu-content {
+    height: 2000px;
+  }
+
+  .headerContentContainer{
+    display: none;
+  }
+  .navBrand{
+    max-width: 160px;
+  }
+  .mobileNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .headerLogo{
+    width: 100%;
+    max-width: 200px;
+    padding: 30px;
+  }
+  .mobile-reg{
+    max-width: 200px;
+    margin-right: 0px;
+    margin: 0 auto;
+  }
+  .navDetails{
+    border-right: 0px;
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+  .navDetails p{
+    font-size: 12px;
+  }
+  .collapsible-menu{
+    padding: 0 20px;
+    border-left: @border;
+  }
+  img.footer-icons {
+    width: 20px;
+  }
+}

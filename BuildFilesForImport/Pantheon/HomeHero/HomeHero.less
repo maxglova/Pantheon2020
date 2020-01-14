@@ -1,0 +1,162 @@
+@import (less) url("../global.less");
+
+.heroWrapper{
+  background-color: @blueprint-blue;
+  color: @white;
+}
+
+.heroContainer{
+    width: 100%;
+    background-image: url('../../../images/Pantheon/blue-grid-bg.png');
+    background-size: contain;
+    background-repeat: repeat;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .pantheonHeroGraphic{
+    width: 90%; 
+    height: auto; 
+    margin: 0 auto;
+  }
+  
+  .heroGraphicContainer{
+    width: 100%;
+    min-height: 200px;
+  }
+  
+  .heroGraphic{
+    width: 90%;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  /* Details Container */
+  .details-top-spacer{
+    margin-top: 70px;
+  }
+  
+  .detailsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .detailsContainer{
+    width: 30%;
+  }
+  .detailsContainer:nth-child(2){
+    border: @border; 
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+  .detailsContainer .headingText{
+    padding: 20px;
+  }
+  .detailsContainer h2{
+    text-align: left;
+    font-size: 36px;
+  }
+  .Countdown{
+     margin: 0 auto;
+  }
+  
+  .Countdown-col-element{
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: middle;
+    font-family: 'barlow', Arial, Helvetica, sans-serif;
+  }
+  .Countdown-col-element strong{
+    font-size: 2em;
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+  }
+  .countdown-label{
+    display: block;
+    font-size: 1.3em;
+  }
+  .detailsContainer p{
+    font-size: 24px;
+    line-height: 41px;
+    text-align: center;
+  }
+  .detailsContainer p:nth-child(2){
+    border: @border;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  .VideoBtn-container{
+    margin-top: 20px;
+  }
+  .reg-btn-spacer{
+    height: 5px;
+  }
+  .details-reg-btn-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .details-reg-btn{
+    margin: 0 auto;
+    width: auto;
+    margin-left: 20px;
+  }
+  img.details-reg-arrow{
+    display: inline; 
+    position: relative;
+    animation: point 2.5s infinite;
+  }
+  .details-container-spacer{
+    height: 60px;
+  }
+
+  .details-container-bottom-spacer{
+    height: 1px;
+  }
+
+  @media (max-width: 992px) {
+    
+    .heroContainer{
+      min-height: 300px;
+    }
+
+    .detailsWrapper{
+      flex-direction: column;
+      width: 80%;
+    }
+    .detailsContainer{
+      width: 100%;
+    }
+    .detailsContainer:nth-child(2){
+      width: 100%;
+      border-top: @white-border;
+      border-bottom: @white-border;
+      border-right: 0px;
+      border-left: 0px;
+    }
+    .Countdown{
+      margin: 10px auto;
+    }
+    .detailsContainer p {
+      line-height: 50px;
+    }
+    .details-reg-btn-container{
+      margin: 20px;
+      max-width: 340px;
+    }
+    .details-container-spacer{
+      height: 20px;
+    }
+    .details-container-bottom-spacer{
+      height: 5px;
+    }
+
+  }

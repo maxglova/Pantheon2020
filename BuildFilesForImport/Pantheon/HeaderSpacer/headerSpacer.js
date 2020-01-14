@@ -1,0 +1,14 @@
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import "./headerSpacer.less"
+
+
+
+const HeaderSpacer = (props) => (
+  <div className="headerSpacer"></div>
+)
+
+
+export default HeaderSpacer
+
