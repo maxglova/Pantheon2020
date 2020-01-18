@@ -4,7 +4,7 @@ import React from "react"
 
 import logo from "../../images/pantheon-logo.svg"
 import regArrow from "../../images/btn-arrow-right.png"
-import "./header.scss"
+import "./header.less"
 import "../global.scss"
 
 console.log(logo);
@@ -62,9 +62,9 @@ const Header = ({ siteTitle }) => (
     <input type="checkbox" id="menu"></input>
     <div class="menu-content">
         <ul>
-            <li><a href="#"></a>Agenda</li>
-            <li><a href="#"></a>Travel</li>
-            <li><a href="#"></a>About</li>
+            <li><a href="/pantheon/agenda">Agenda</a></li>
+            <li><a href="/pantheon/travel">Travel</a></li>
+            <li><a href="/pantheon/about">About</a></li>
             <li className="reg-btn-container mobile-reg">
               <Link className="reg-btn mobile-reg" to="/register">Registration
               </Link>

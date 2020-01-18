@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "./style.scss"
 
@@ -37,7 +35,7 @@ const LeftImgRowValueProps = (props) => (
               <p>Attendees</p>
             </div>
             <div className="border-flex-item l-img-details-btn-container">
-              <a href="" className="outlined-btn l-img-details-btn align-middle">
+              <a href="/pantheon/about" className="outlined-btn l-img-details-btn align-middle">
                 Learn More
               </a>
             </div>

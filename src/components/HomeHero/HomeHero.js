@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
 import regArrow from "../../images/btn-arrow-right.png"
@@ -18,7 +16,7 @@ const HomeHero = () => (
         <div className="container-fluid heroWrapper">
             <HeaderSpacer />
             <div className="heroContainer">
-                <img src={heroImage} className="heroGraphic" />
+                <img src={heroImage} className="heroGraphic" alt="Pantheon Graphic"/>
                 <div className="details-container-spacer"></div>
             </div>
             <div className="detailsWrapper">
@@ -34,7 +32,7 @@ const HomeHero = () => (
                     <div className="reg-btn-spacer"></div>
                         <div className="details-reg-btn-container">
                         <a href="/register" className="reg-btn details-reg-btn">Register Now</a>
-                        <img className="details-reg-arrow" src={regArrow} alt="register arrow" />
+                        <img className="details-reg-arrow" src={regArrow} alt="arrow"/>
                         </div>
                     <div className="reg-btn-spacer"></div>
                     </div>

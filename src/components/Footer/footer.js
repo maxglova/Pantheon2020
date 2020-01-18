@@ -4,7 +4,7 @@ import React from "react"
 
 import logo from "../../images/pantheon-logo.svg"
 import "./footer.scss"
-import "../Header/header.scss" 
+import "../Header/header.less" 
 import "../global.scss"
 
 import insta from "../../images/Icons/icon-instagram.png"
@@ -28,11 +28,11 @@ const Footer = ({ siteTitle }) => (
     </div>
     <div className="FooterContentContainer">
       <div className="footer-social-links">
-        <img src={twitter} className="footer-icons"/>
-        <img src={facebook} className="footer-icons"/>
-        <img src={youtube} className="footer-icons"/>
-        <img src={linkedin} className="footer-icons"/>
-        <img src={insta} className="footer-icons"/>
+        <img src={twitter} className="footer-icons" alt="footer icon"/>
+        <img src={facebook} className="footer-icons" alt="footer icon"/>
+        <img src={youtube} className="footer-icons" alt="footer icon"/>
+        <img src={linkedin} className="footer-icons" alt="footer icon"/>
+        <img src={insta} className="footer-icons" alt="footer icon"/>
       </div>
     </div>
   </div>

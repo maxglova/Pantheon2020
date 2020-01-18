@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
   </div>
   <div className="mainContentContainer">
     <Link className="vidBtnContainer" to="">
-      <img className="splashVideoBtn" src={videoBtn} />
+      <img className="splashVideoBtn" src={videoBtn} alt="Splash Video Button"/>
     </Link>
     <h1 className="splash-bold-upper-head">SCALE YOUR BUSINESS. <br />REDESIGN AN INDUSTRY.</h1>
   </div>
