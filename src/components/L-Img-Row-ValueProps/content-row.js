@@ -8,8 +8,8 @@ import videoBtn from "../../images/video.png"
 const LeftImgRowValueProps = (props) => (
     <div className="container grid-bg">
     <div className="ruler-bg">
-      <div className="row content-spacer">
-        <div className="col-sm-6">
+      <div className="row left-content-spacer">
+        <div className="col-sm-6 desktop-left-img">
           <img className="col-6-img" src={props.leftImgSrc} alt={props.leftImgAltTxt}/> 
         </div>
         <div className="col-sm-6 details-top-spacer">
@@ -23,25 +23,28 @@ const LeftImgRowValueProps = (props) => (
               <p className="VideoBtnLabel">{props.VideoBtnLabel}</p>
             </div>
           </div>
-          <div className="flexbox valueProp-container">
-            <div className="flex-item">
+          <div className="flexbox border-flexbox valueProp-container">
+            <div className="border-flex-item">
               <h3>{props.valueHead1}</h3>
               <p>{props.valueSubHead1}</p>
             </div>
-            <div className="flex-item">
+            <div className="border-flex-item">
               <h3>38</h3>
               <p>Speakers</p>
             </div>
-            <div className="flex-item">
+            <div className="border-flex-item">
               <h3>1,200+</h3>
               <p>Attendees</p>
             </div>
-            <div className="btn-container">
-              <a href="" className="outlined-btn align-middle">
-                <p>Learn More</p>
+            <div className="border-flex-item l-img-details-btn-container">
+              <a href="" className="outlined-btn l-img-details-btn align-middle">
+                Learn More
               </a>
             </div>
           </div>
+        </div>
+        <div className="col-sm-6 left-content-spacer mobile-left-img">
+          <img className="col-6-img" src={props.leftImgSrcMobile} alt={props.leftImgAltTxt}/> 
         </div>
       </div>
     </div>

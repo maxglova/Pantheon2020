@@ -1,0 +1,64 @@
+@import '../global.scss';
+
+.iso-grid-bg{
+    background-image: url('../../images/isoGrid-bg.png');
+  }
+
+  .aboutDetailsBorderContainer{
+      border: $blueprintBorder;
+  }
+
+  .detailsIcon{
+      padding: 15px;
+  }
+
+  .priceIconPad{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .aboutDetailsContainer{
+      display: flex;
+      border-top: $blueprintBorder;
+  }
+
+  .aboutDetailsContainer:nth-child(1){
+      border-top: none;
+  }
+
+  .aboutDetailsCopy{
+      padding: 10px;
+  }
+
+  .boldedAboutDetailsHead{
+      font-weight: bold;
+  }
+
+  .aboutDetailsRightDashedLines{
+    position: absolute;
+    top: 34px;
+    right: -19px;
+  }
+
+  .aboutDetailsBottomDashedLines{
+    bottom: 16px;
+    position: absolute;
+    width: 92%;
+  }
+
+
+  @media (max-width: 992px) {
+        .aboutDetailsWrapper{
+            margin-top: 40px;
+            margin-right: 30px;
+        }
+        .aboutDetailsRightDashedLines{
+            top: 76px;
+            right: 7px;
+          }
+        
+          .aboutDetailsBottomDashedLines{
+            bottom: -42px;
+            width: 84%;
+          }
+  }

@@ -37,27 +37,6 @@ h1, h2, h3, h4, h5 ,h6, p {
   flex-flow: row wrap;
 }
 
-/* Mobile Styles */
-
-
-@media (max-width: 992px) {
-
-  .headerContentContainer{
-    display: none;
-  }
-
-  .mobileNav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .headerLogo{
-    width: 100%;
-    max-width: 200px;
-    padding: 20px;
-  }
-}
-
 /* Header */
 .HeaderWrapper{ 
   background: $blueprint-blue;
@@ -439,4 +418,23 @@ input:checked ~ .menu-content {
   max-height: 100%;
 }
 
+/* Mobile Styles */
 
+
+@media (max-width: 992px) {
+
+  .headerContentContainer{
+    display: none;
+  }
+
+  .mobileNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .headerLogo{
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+  }
+}

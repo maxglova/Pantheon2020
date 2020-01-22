@@ -11,8 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header/header"
 import Footer from "./Footer/footer"
-import HomeHero from "./HomeHero/HomeHero.js"
-import "./layout.scss"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

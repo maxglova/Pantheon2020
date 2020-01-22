@@ -1,22 +1,26 @@
 @import "../global.scss";
+  
 
-/* Grid BG Container */
+/* BG's */
+
 .grid-bg{
-    background-image: url('https://cdn2.hubspot.net/hubfs/1584056/grid-lines-bg.png');
-    background-size: cover; 
-    background-position: top center;
-  }
-  .ruler-bg{
-    background-image: url('../../images/top-ruler.png');
-    background-size: contain; 
-    background-position: top center;
-    background-repeat: no-repeat;
+  background-image: url('../../images/grid-lines-bg.png');
+  background-size: cover; 
+  background-position: top center;
+}
+.ruler-bg{
+  background-image: url('../../images/top-ruler.png');
+  background-size: contain; 
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+  /*  Content Styles  */
+  .r-img-content-spacer{
+    padding-top: 0px;
+    padding-bottom: 120px;
   }
   
-  /*  Content Styles  */
-  .content-spacer{
-    padding-top: 120px;
-  }
   .category-label{
     background-color: $st-blue;
     text-align: center;
@@ -40,7 +44,6 @@
   
   .valueProp-container{
     width: 100%;
-    border: $blueprintBorder;
   }
 
   .subHead{
@@ -48,6 +51,21 @@
     font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: $gray;
+  }
+
+  .sessionsList ul {
+    margin-left: 20px;
+    list-style: none;
+    letter-spacing: $heading-letter-space;
+  }
+
+  .sessionsList li::before {
+    content: "\2022"; 
+  color: #8F8F8F; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
   }
 
   .secondSessionList li:nth-child(3){
@@ -75,20 +93,7 @@
     margin: 0 auto;
     position: relative;
   }
-  
-  .outlined-btn{
-    border: $blueprintBorder;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-family: $barlow-condensed-stack;
-    display: inline-block;
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    width: max-content;
-  }
+
   
   a.outlined-btn:hover{
     background-color: $blueprint-blue;
@@ -100,4 +105,16 @@
   
   .outline-btn p{
     vertical-align: middle;
+  }
+
+
+  @media (max-width: 992px) {
+
+    .r-img-mobile-spacer{
+      margin-top: 40px;
+    }
+    .r-img-content-spacer {
+      padding-bottom: 60px;
+    }
+
   }

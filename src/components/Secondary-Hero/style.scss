@@ -1,0 +1,60 @@
+@import '../global.scss';
+
+.inner-hero-row{
+    width: 100%;
+    height: 329px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerHeroContentsContainer{
+    width: 775px;
+    padding-top: 137px;
+    margin: 0 auto;
+}
+
+.innerHeroHeader{
+    font-size: 3.5em;
+    color: $white;
+    text-align: center;
+}
+
+.innerSubHead{
+    text-align: center;
+    position: relative;
+    top: -38px;
+    left: -20px;
+}
+
+
+@media (max-width: 992px) {
+    .innerHeroContentsContainer {
+        padding-top: 0px;
+        width: auto;
+        padding-top: 100px;
+    }
+    .innerHeroHeader{
+        font-size: 1.5em;
+    }
+    .innerSubHead {
+        width: 40%;
+        top: -17px;
+        left: -9px;
+    }
+    .inner-hero-row{
+        height: 200px;
+    }
+    .wrenchGraphic{
+        display: none;
+    }
+    .regMobileAdjustCards{
+        width: 100%;
+    }
+    .ticketList{
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .textLink-wArrow-Reg1{
+        margin-bottom: 25px;
+    }
+}

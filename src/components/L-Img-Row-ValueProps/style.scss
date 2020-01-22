@@ -1,21 +1,21 @@
 @import "../global.scss";
 
-  /* Containers & BG's */
+/* BG's */
 
-  .grid-bg{
-    background-image: url('../../images/grid-lines-bg.png');
-    background-size: cover; 
-    background-position: top center;
-  }
-  .ruler-bg{
-    background-image: url('../../images/top-ruler.png');
-    background-size: contain; 
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
+.grid-bg{
+  background-image: url('../../images/grid-lines-bg.png');
+  background-size: cover; 
+  background-position: top center;
+}
+.ruler-bg{
+  background-image: url('../../images/top-ruler.png');
+  background-size: contain; 
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
   /*  Content Styles  */
-  .content-spacer{
+  .left-content-spacer{
     padding-top: 120px;
   }
   .category-label{
@@ -32,6 +32,15 @@
     padding: 20px;
     border: $blueprintBorder;
   }
+  .content-container p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .videoBtn-container{
+    margin-top: 20px;
+  }
+  
   .VideoBtnLabel{
     display: inline-block;
     margin-left: 20px;
@@ -41,25 +50,32 @@
   
   .valueProp-container{
     width: 100%;
-    border: $blueprintBorder;
+    border-right: 1px solid #0553EF;
+    border-bottom: 1px solid #0553EF;
+    border-top: 0px;
   }
   
-  .flexbox .flex-item{
-    padding: 10px 20px;
+  .border-flexbox .border-flex-item{
     vertical-align: middle;
-    border: $blueprintBorder;
-    border-top: 0px; 
-    border-bottom: 0px;
     height: 100%;
+    border-right: 1px solid #0553EF;
+    padding: 10px 20px;
+  }
+  .border-flexbox .border-flex-item:nth-child(1){
+    border-left: $blueprintBorder;
+  }
+  .border-flexbox .border-flex-item:nth-child(4){
+    border-right: 0px;
   }
   
-  .flex-item h3{
+  .border-flex-item h3{
     font-weight: bold;
   }
   
   .btn-container{
     margin: 0 auto;
     position: relative;
+    border-right: $blueprintBorder;
   }
   
   .outlined-btn{
@@ -67,13 +83,18 @@
     padding: 10px 20px;
     font-weight: bold;
     font-family: $barlow-condensed-stack;
-    display: inline-block;
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    width: max-content;
+    width: 180px;
+  }
+
+  .l-img-details-btn-container{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .l-img-details-btn{
+     display: inline-block;
+     margin-top: 6px;
+     margin-bottom: 5px;
   }
   
   a.outlined-btn:hover{
@@ -86,4 +107,66 @@
   
   .outline-btn p{
     vertical-align: middle;
+  }
+
+  .mobile-left-img{
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .left-content-spacer {
+      padding-top: 40px;
+    }
+    .details-top-spacer{
+      margin-top: 30px;
+    }
+    .border-flexbox .border-flex-item{
+      width: 33%;
+    }
+    .border-flexbox .border-flex-item:nth-child(3){
+      border-right: none;
+    }
+    .border-flexbox .border-flex-item:nth-child(4){
+      width: 100%;
+      border-top: $blueprintBorder;
+      border-left: $blueprintBorder;
+    }
+    .l-img-details-btn {
+      width: 100%;
+    }
+    .desktop-left-img{
+      display: none;
+    }
+    .mobile-left-img {
+      display: initial;
+    }
+    .carousel-caption{
+      top: 15px;
+      padding: 0px;
+      left: 9%;
+      width: 75%;
+    }
+    .caption-top-bracket {
+      max-width: 30px;
+      top: 10px !important;
+      left: 0px !important;
+    }
+    .firstQuote {
+      font-size: 2em !important;
+      top: -19px !important;
+      right: -8px !important;
+    }
+    .quote{
+      font-size: .8em !important;
+      left: 18px;
+      top: -39px;
+      top: -40px;
+      position: relative;
+    }
+    .quoteeName{
+      font-size: .6em !important;
+      position: relative;
+      top: -40px;
+      left: 16px;
+    }
   }

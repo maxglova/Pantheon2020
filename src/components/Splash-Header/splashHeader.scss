@@ -1,0 +1,190 @@
+@import '../global.scss';
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%,-50%);
+}
+
+.HeaderWrapperSplash{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: $blueprint-blue;
+  color: $white;
+  height: 80px;
+}
+
+.HeaderWrapperSplash > ul {
+  list-style-type: none;
+  display: flex;
+  flex: 3;
+}
+
+.headerLogo{
+  width: 100%;
+  margin-top: 25px;
+}
+
+.HeaderWrapperSplash ul {
+  flex-direction: row;
+
+}
+
+.HeaderWrapperSplash > ul > li:nth-child(2){
+  border-left: $border;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.headerContentContainer{
+  justify-content: start;
+}
+
+.splashHeadLogoContainer {
+  display: flex;
+}
+
+.splashDateLocationContainer{
+  display: inline-block;
+  color: $white;
+  padding: 15px 20px;
+  border-left: $border;
+}
+
+.navbrand {
+  flex: 0 0 30%;
+  margin-left: 20px;
+}
+
+.navBrand{
+  vertical-align: none;
+}
+
+.headerLogo{
+  padding: 0 20px;
+}
+
+.navbar-nav{
+  padding: 20px;
+}
+
+.head-reg-arrow-splash{
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  left: 157px;
+  animation: point 2.5s infinite;
+}
+
+.registerBtn{
+  height: 100%;
+  vertical-align: middle;
+  padding: 0 30px;
+}
+
+.reg-btn-splash{
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+    background-color: $orange;
+    color: $white;
+    font-family: 'barlow condensed', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 160px;
+}
+
+.mainContentContainer{
+  background-size: cover; 
+  background-position: top center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.splash-bold-upper-head{
+  margin: 0 auto;
+  padding-top: 19%;
+  color: $white;
+  text-align: center;
+  z-index: 20;
+  text-shadow: 2px 2px #292929;
+  position: relative;
+}
+
+.splashVideoBtn{
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  z-index: 1;
+}
+
+.vidBtnContainer{
+  position: absolute;
+  width: inherit;
+  top: 0;
+}
+.splashDetailsContainer {
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.splashDetailsContainer p{
+  font-size: 14px;
+}
+
+.head-logo{
+  border-right: $border;
+}
+
+@media (max-width: 992px) {
+    .splashDateLocationHead{
+      font-size: 12px;
+    }
+    .head-logo{
+      max-width:160px;
+      border-right: none;
+    }
+    .headerLogo{
+      margin-top: 12px !important;
+    }
+    .splashHeadLogoContainer{
+       flex-direction: column;
+    }
+    .splashDetailsContainer {
+      margin-top: 6px !important;
+      line-height: 16px !important;
+      margin-left: 19px !important;
+    }
+    .splashVideoBtn {
+      width: 90%;
+      left: 5%;
+      margin-top: 130px;
+    }
+    .splash-bold-upper-head {
+      font-size: 2em;
+      padding-top: 24%;
+    }
+    .registerBtn{
+      padding: 0 10px;
+    }
+    .reg-btn-splash{
+      width: 130px;
+      margin-top: 19px;
+    }
+}

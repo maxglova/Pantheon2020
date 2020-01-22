@@ -1,0 +1,165 @@
+@import '../global.scss';
+
+.inner-hero-row{
+    width: 100%;
+    height: 329px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerHeroContentsContainer{
+    width: 775px;
+    padding-top: 137px;
+}
+
+.innerHeroHeader{
+    font-size: 3.5em;
+    color: $white;
+}
+
+.innerSubHead{
+    text-align: center;
+    position: relative;
+    top: -38px;
+    left: -20px;
+}
+
+.orange-banner{
+    background-color: $orange;
+}
+
+.blue-banner{
+    background-color: $st-blue;
+}
+
+.pricingBannerTxt{
+    color: $white;
+    text-align: center;
+    padding: 5px;
+    font-size: .9em;
+}
+
+.mainPriceContainer{
+    padding: 15px;
+    border: $blueprintBorder;
+}
+
+.pricingContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.slashedPriceContainer{
+    width: fit-content;
+    padding-right: 15px;
+}
+.CurrentPriceContainer{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.ticketName{
+    color: $gray;
+}
+
+.slashedPriceContainer .ticketPrice {
+    color: $gray;
+}
+
+.CurrentPriceContainer .ticketPrice{
+    color: $orange;
+}
+
+.CurrentPriceContainer .ticketQuantity{
+    color: $black;
+}
+
+.ticketPrice{
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+.ticketQuantity{
+    color: $gray;
+    text-transform: uppercase;
+}
+
+.strikethrough {
+    position: relative;
+}
+
+.strikethrough:before {
+    border-bottom: 3px solid $orange;
+    -webkit-transform: skewY(-10deg);
+    -moz-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+}
+
+.ticketDetailsContainer{
+    border: $blueprintBorder;
+    padding: 20px;
+}
+
+.ticketDetailsBoldTxt{
+    font-weight: bold;
+}
+
+.ticketList{
+    padding-left: 15px;
+    padding-top: 15px;
+    list-style-type: square;
+}
+
+.inactive{
+    color: $gray;
+    text-decoration: line-through;
+}
+
+.wrenchGraphic{
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.groupWrench{
+    padding-top: 3px;
+}
+
+.vipContainer{
+    background-color: $blueprint-blue;
+    color: $white;
+    border-bottom: $white-border;
+}
+
+.vipContainer h2, .vipContainer .ticketPrice, .vipContainer .ticketQuantity{
+    color: $white;
+}
+
+@media (max-width: 992px) {
+    .pricingCard{
+        margin-top: 40px;
+    }
+    .pricingCard:nth-child(1){
+        margin-top: 0px;
+    }
+    .inner-hero-row-wSubHead{
+        height: 200px;
+    }
+    .wrenchGraphic{
+        display: none;
+    }
+    .regMobileAdjustCards{
+        width: 100%;
+    }
+    .ticketList{
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .textLink-wArrow-Reg1{
+        margin-bottom: 25px;
+    }
+}
